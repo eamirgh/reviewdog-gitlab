@@ -2,7 +2,7 @@ FROM alpine:3.12
 
 RUN apk update && \
     apk upgrade && \
-    apk add --nocache ca-certificates wget bash git openssh && \
+    apk add --no-cache ca-certificates wget bash git openssh && \
     update-ca-certificates
 
 # https://stackoverflow.com/questions/34729748/installed-go-binary-not-found-in-path-on-alpine-linux-docker
